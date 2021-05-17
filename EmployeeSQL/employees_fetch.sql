@@ -32,7 +32,7 @@ INNER JOIN employees emp on dept_emp.emp_no = emp.emp_no WHERE dep.dept_name = '
 
 ---8. In descending order, list the frequency count of employee last names, i.e., 
 ---how many employees share each last name.
-SELECT last_name,count(last_name) AS RepeatedLastName FROM employees GROUP BY last_name;
+SELECT last_name,count(last_name) AS RepeatedLastName FROM employees GROUP BY last_name ORDER BY RepeatedLastName DESC;
 
 
 
